@@ -20,42 +20,31 @@
 
     <div class="container">
         <div class="row mt-5 justify-content-center">
-            <div class="col-10 bg-white shadow mt-4 p-4 rounded">
+            <div class="col-8 bg-white shadow p-4 rounded">
 
-                <h1 class="alert alert-primary text-center mb-5">Fundamentos JavaScript</h1>
+                <h1 class="alert alert-primary text-center mb-5 shadow">Fundamentos JavaScript</h1>
 
-                <ul class="list-group">
+                <ul class="list-group px-3">
 
                     <p class="h4 alert alert-secondary p-2 shadow text-center" id="parrafo1"></p>
-                    <p class="h4 alert alert-success p-2 shadow text-center" id="parrafo2"></p>
-                    <p class="h4 alert alert-info p-2 shadow text-center" id="parrafo3"></p>
-
-                    <hr>
-
-                    <p class="h4 alert alert-secondary p-2 shadow text-center" id="parrafo4"></p>
-                    <p class="h4 alert alert-success p-2 shadow text-center" id="parrafo5"></p>
-                    <p class="h4 alert alert-info p-2 shadow text-center" id="parrafo6"></p>
-
+                    <p class="h4 alert alert-primary p-2 mt-1 shadow text-center" id="parrafo2"></p>
+                    <p class="h4 alert alert-secondary p-2 mt-1 shadow text-center" id="parrafo3"></p>
+                    <p class="h4 alert alert-primary p-2 mt-1 shadow text-center" id="parrafo4"></p>
+                    <p class="h4 alert alert-secondary p-2 mt-1 shadow text-center" id="parrafo5"></p>                    
+                                       
                     <script>
 
-                            var color = "rojo";
-                            document.getElementById("parrafo1").innerHTML = "Antes del bloque " + color;
-                            {
-                                var color = "verde";
-                                document.getElementById("parrafo2").innerHTML = "{ <br> Dentro del bloque " + color + " <br> }";
-                            }
-                            document.getElementById("parrafo3").innerHTML = "Despues del bloque " + color;
+                        let a = 9;
+                        let b = 3;
 
-                            let color2 = "rojo";
-                            document.getElementById("parrafo4").innerHTML = "Antes del bloque " + color2;
-                            {
-                                let color2 = "verde";
-                                document.getElementById("parrafo5").innerHTML = "{ <br> Dentro del bloque " + color2 + " <br> }";
-                            }
-                            document.getElementById("parrafo6").innerHTML = "Despues del bloque " + color2;
+                        document.getElementById("parrafo1").innerHTML = "Total " + a + " + "  + b + " = " + ( a + b);
+                        document.getElementById("parrafo2").innerHTML = "Diferencia " + a + " - "  + b + " = " + ( a - b);
+                        document.getElementById("parrafo3").innerHTML = "Producto " + a + " * "  + b + " = " + ( a * b);
+                        document.getElementById("parrafo4").innerHTML = "Cociente " + a + " / "  + b + " = " + ( a / b);
+                        document.getElementById("parrafo5").innerHTML = "Residuo " + a + " % "  + b + " = " + ( a % b);
+                            
+                    </script>      
 
-                        </script>      
-                                      
 
                 </ul>
 
