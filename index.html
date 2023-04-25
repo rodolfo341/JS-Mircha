@@ -26,23 +26,16 @@
 
                 <ul class="list-group px-3">
 
-                    <p class="h4 alert alert-secondary p-2 shadow text-center" id="parrafo1"></p>
-                    <p class="h4 alert alert-primary p-2 mt-1 shadow text-center" id="parrafo2"></p>
-                    <p class="h4 alert alert-secondary p-2 mt-1 shadow text-center" id="parrafo3"></p>
-                    <p class="h4 alert alert-primary p-2 mt-1 shadow text-center" id="parrafo4"></p>
-                    <p class="h4 alert alert-secondary p-2 mt-1 shadow text-center" id="parrafo5"></p>                    
-                                       
+                    <p class="h4 alert alert-danger p-2 shadow text-center" id="parrafo1"></p>
+                                                           
                     <script>
 
                         let a = 9;
-                        let b = 3;
-
-                        document.getElementById("parrafo1").innerHTML = "Total " + a + " + "  + b + " = " + ( a + b);
-                        document.getElementById("parrafo2").innerHTML = "Diferencia " + a + " - "  + b + " = " + ( a - b);
-                        document.getElementById("parrafo3").innerHTML = "Producto " + a + " * "  + b + " = " + ( a * b);
-                        document.getElementById("parrafo4").innerHTML = "Cociente " + a + " / "  + b + " = " + ( a / b);
-                        document.getElementById("parrafo5").innerHTML = "Residuo " + a + " % "  + b + " = " + ( a % b);
-                            
+                        
+                        document.getElementById("parrafo1").innerHTML = 
+                                                "El antecesor de " + a + " es " + --a 
+                                                + " <br> y el sucesor de " + ++a + " es " + ++a;
+                                                    
                     </script>      
 
 
