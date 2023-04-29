@@ -27,17 +27,27 @@
                 <ul class="list-group px-3">
 
                     <p class="h4 alert alert-danger p-2 shadow text-center" id="parrafo1"></p>
+                    <p class="h4 alert alert-warning p-2 shadow text-center" id="parrafo2"></p>
                                                            
                     <script>
-                        let a = 9;                        
-                        document.getElementById("parrafo1").innerHTML = 
-                                                "El antecesor de " + a + " es " + --a 
-                                                + " <br> y el sucesor de " + ++a + " es " + ++a;
-                                                    
+                        
+                        const persona = {
+                            nombre: "Rodolfo",
+                            edad: 51
+                        }
+                        document.getElementById("parrafo1").innerHTML = persona.nombre + " - " + persona.edad               
+
+                        const colores = ["rojo","verde","azul"]
+                        document.getElementById("parrafo2").innerHTML = colores
                     </script>      
 
                 </ul>
 
+
+
+
+
+                
             </div>
             
         </div>
