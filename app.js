@@ -1,6 +1,7 @@
 
-let frase = prompt("ingrese un numero");
+let frase = prompt("ingrese frase");
 let cont = 0;
+let cadena = "";
 
 for (let i = 0; i < frase.length; i++) {
     if(    frase.charAt(i) === "a" 
@@ -14,11 +15,9 @@ for (let i = 0; i < frase.length; i++) {
         || frase.charAt(i) === "O"
         || frase.charAt(i) === "U"
          ){
-        cont++;
+        cadena = cadena + frase.charAt(i);
     }    
+    
 } 
-
-
-document.getElementById("parrafo1").innerHTML = "Total de vocales es " + cont;
-
+document.getElementById("parrafo1").innerHTML = cadena;
 
