@@ -1,2 +1,3 @@
 
-document.getElementById("parrafo1").innerHTML = 3+5;
+let nombreUser = prompt("ingrese su nombre");
+document.getElementById("parrafo1").innerHTML = "Hola " + nombreUser; 
