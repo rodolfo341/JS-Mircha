@@ -1,15 +1,35 @@
 
+let num = parseInt(prompt("Ingrese numero a comprobar"));
+let flag = false;
 
-do {
-    
-    let num = parseInt(prompt("Ingrese numero a comprobar"));
-    let numDiv = parseInt(prompt("ingrese numero 2, 3, 5 o 7"));
+if ( num % 2 === 0) {
+    document.getElementById("parrafo1").innerHTML = "El número " + num + " es divisible por 2";
+    flag = true;
+}else {
+    document.getElementById("parrafo1").innerHTML = "El número " + num + " no es divisible por 2";
+}
 
-    if ( num % numDiv == 0){
-        document.getElementById("parrafo").innerHTML = "El numero " + num + " es divisible por " + numDiv;
-    }else{
-        document.getElementById("parrafo").innerHTML = "El numero " + num + " no es divisible por " + numDiv;
-    }
+if ( num % 3 === 0) {
+    document.getElementById("parrafo2").innerHTML = "El número " + num + " es divisible por 3";
+    flag = true;
+}else {
+    document.getElementById("parrafo2").innerHTML = "El número " + num + " no es divisible por 3";
+}
 
-} while (!( numDiv == 2 || numDiv == 3 || numDiv == 5 || numDiv == 7 ));
+if ( num % 5 === 0) {
+    document.getElementById("parrafo3").innerHTML = "El número " + num + " es divisible por 5";
+    flag = true;
+}else {
+    document.getElementById("parrafo3").innerHTML = "El número " + num + " no es divisible por 5";
+}
 
+if ( num % 7 === 0) {
+    document.getElementById("parrafo4").innerHTML = "El número " + num + " es divisible por 7";
+    flag = true;
+}else {
+    document.getElementById("parrafo4").innerHTML = "El número " + num + " no es divisible por 7";
+}
+
+if ( flag === false ){
+    document.getElementById("parrafo5").innerHTML = "El numero " + num + " no es divisible por ninguno ";
+}
