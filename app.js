@@ -1,10 +1,15 @@
 
-let numero1 = parseInt(prompt("ingrese numero 1"));
-let numero2 = parseInt(prompt("ingrese numero 2"));
-let numero3 = parseInt(prompt("ingrese numero 2"));
+let frase = prompt("ingrese un numero");
+let letra = "a";
+let cont = 0;
 
-if ( numero1 > numero2 && numero1 > numero3 ) document.getElementById("parrafo1").innerHTML = "el mayor es " + numero1;
+for (let i = 0; i < frase.length; i++) {
+    if(frase.charAt(i) === letra){
+        cont++;
+    }    
+} 
 
-else if ( numero2 > numero1 && numero2 > numero3 ) document.getElementById("parrafo1").innerHTML = "el mayor es " + numero2;
 
-else document.getElementById("parrafo1").innerHTML = "el mayor es " + numero3; 
+document.getElementById("parrafo1").innerHTML = "La letra " + letra + " se repite " + cont + " veces";
+
+
